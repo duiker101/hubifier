@@ -4,26 +4,27 @@
 	"license": "MIT",
 	"scripts": {
 		"clean": "rimraf build .cache",
-		"serve": "parcel src/background.ts src/popup/index.html -d build",
-		"build": "yarn run clean && parcel build src/background.ts src/popup/index.html -d build",
-		"watch": "parcel watch build src/background.ts src/popup/index.html -d build"
+		"start": "vite -c vite.config.ts build -w -m development",
+		"build": "tsc && vite -c vite.config.ts build"
 	},
 	"devDependencies": {
-		"node-sass": "^6.0.1",
-		"parcel-bundler": "^1.12.5",
-		"parcel-plugin-static-files-copy": "^2.6.0",
-		"typescript": "^4.4.3"
+		"@types/chrome": "^0.0.233",
+		"@types/moment": "^2.13.0",
+		"@types/react": "^18.0.37",
+		"@types/react-dom": "^18.0.11",
+		"@vitejs/plugin-react": "^3.1.0",
+		"@types/node": "^18.15.11",
+		"prettier": "^2.8.7",
+		"rimraf": "^3.0.2",
+		"sass": "^1.62.0",
+		"typescript": "^5.0.4",
+		"vite": "^4.2.2",
+		"vite-plugin-svgr": "^2.4.0"
 	},
 	"dependencies": {
-		"@types/chrome": "^0.0.157",
-		"@types/moment": "^2.13.0",
-		"axios": "^0.21.4",
-		"eslint": "^7.32.0",
-		"github": "^14.0.0",
-		"moment": "^2.29.1",
-		"preact": "^10.5.14",
-		"prettier": "^2.4.0",
-		"rimraf": "^3.0.2"
+		"moment": "^2.29.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
 	},
 	"browserslist": [
 		"last 1 Chrome versions"

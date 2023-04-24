@@ -1,24 +1,35 @@
 {
-  "compilerOptions": {
-    "target": "es2015",
-    "module": "es2015",
-    "outDir": "build",
-    "esModuleInterop": true,
-    "jsx": "react",
-    "moduleResolution": "node",
-    "lib": [
-      "dom",
-      "es5",
-      "es6"
-    ],
-    "baseUrl": "./src",
-    "paths": {
-      "~*": [
-        "./*"
-      ]
-    }
-  },
-  "include": [
-    "./src/**/*.ts*"
-  ]
+	"compilerOptions": {
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+		"lib": [
+			"DOM",
+			"DOM.Iterable",
+			"ESNext"
+		],
+		"allowJs": false,
+		"skipLibCheck": true,
+		"esModuleInterop": false,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"types": [
+			"vite/client",
+			"chrome"
+		]
+	},
+	"include": [
+		"**/src/**/*"
+	],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
 }

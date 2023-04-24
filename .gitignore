@@ -2,3 +2,5 @@
 .idea/
 build/
 node_modules/
+build.crx
+build.pem

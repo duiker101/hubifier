@@ -1,0 +1,25 @@
+{
+	"name": "Hubifier",
+	"version": "1.2",
+	"description": "Github notifications",
+	"permissions": [
+		"notifications",
+		"storage"
+	],
+	"icons": {
+		"128": "full_icon.png",
+		"48": "full_icon48.png",
+		"32": "full_icon32.png",
+		"16": "full_icon16.png"
+	},
+	"action": {
+		"default_icon": "action_icon.png",
+		"default_title": "Hubifier",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"service_worker": "assets/background.js",
+		"type": "module"
+	},
+	"manifest_version": 3
+}
